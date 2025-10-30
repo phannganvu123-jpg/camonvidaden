@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Thỏ Dâu đang đợi bạn</title>
+  <style>
+    body {
+      margin: 0;
+      background: #ffc0cb;
+      font-family: Segoe UI, sans-serif;
+    }
+
+    /* Title nhấp nháy */
+    .title {
+      text-align: center;
+      font-size: 300px;
+      font-weight: 900;
+      margin: 20px 0;
+      animation: blinkColor 1s infinite alternate;
+      text-transform: uppercase;
+    }
+
+    @keyframes blinkColor {
+      0% { color: #ff7b00; text-shadow: 0 0 10px #ff7b00; }
+      100% { color: #c40000; text-shadow: 0 0 12px #ff0000; }
+    }
+
+    .image-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      padding-bottom: 50px;
+    }
+
+    .image-box {
+      width: 260px;
+      height: 260px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease, filter 0.3s ease;
+      cursor: pointer;
+    }
+
+    .image-box:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+
+    /* Pop-up khi click */
+    .image-box:active {
+      transform: scale(1.12);
+      filter: brightness(1.15);
+    }
+  </style>
+</head>
+<body>
+
+<h1 class="title">HÃY CHỌN CHÚNG TÔI</h1>
+
+<div class="image-container">
+  <a href="https://ticketbox.vn/events/25119/bookings/71556132879530/select-ticket" target="_blank">
+    <div class="image-box" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYxIFvfs872kxHhki27fcRfGvtCdGf1REZEQ&s');"></div>
+  </a>
+
+  <a href="https://ticketbox.vn/events/25119/bookings/71556132879530/select-ticket" target="_blank">
+    <div class="image-box" style="background-image:url('https://bom.so/BpydnM');"></div>
+  </a>
+  
+  <a href="https://ticketbox.vn/events/25119/bookings/71556132879530/select-ticket" target="_blank">
+    <div class="image-box" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDoZJdzew2SyA9LCR8kyoaO0Ko4pdj5dY38A&s');"></div>
+  </a>
+</div>
+
+</body>
+</html>
